@@ -1,4 +1,12 @@
 """
+GROUP 5 OOP
+MUWANGUZI DAVID JEREMIAH
+KIMULI DAVID 
+NSUBUGA BRIAN
+NASSALI FELISTA SSEGAWA
+STEPHEN CYRUS KALEMA
+
+
 MAKERERE UNIVERSITY - COURSEWORK 1
 CGPA Calculator System with Basic Calculator
 Question 1, 2, 3 Implementation
@@ -10,7 +18,6 @@ from docx import Document
 from docx.shared import Inches
 
 class CGPAStudentSystem:
-    """Main system for CGPA calculation and student records management"""
     
     def __init__(self):
         self.grade_points = {'A': 5, 'B': 4, 'C': 3, 'D': 2, 'E': 1, 'F': 0}
@@ -25,16 +32,7 @@ class CGPAStudentSystem:
         self.student_records_document.add_paragraph()
     
     def calculate_semester_cgpa(self, grades_list, credit_units_list):
-        """
-        Calculate CGPA based on grades and credit units
         
-        Args:
-            grades_list (list): List of grade letters
-            credit_units_list (list): List of credit units
-            
-        Returns:
-            float: Calculated CGPA
-        """
         total_grade_points = 0
         total_credit_units = 0
         
@@ -48,17 +46,7 @@ class CGPAStudentSystem:
         return total_grade_points / total_credit_units
     
     def perform_arithmetic_operation(self, number1, number2, operation):
-        """
-        Perform basic arithmetic operations with error handling
-        
-        Args:
-            number1 (float): First number
-            number2 (float): Second number
-            operation (str): Operation symbol (+, -, *, /)
-            
-        Returns:
-            float or str: Result or error message
-        """
+       
         try:
             if operation == '+':
                 return number1 + number2
@@ -76,15 +64,6 @@ class CGPAStudentSystem:
             return f"Error: {str(error)}"
     
     def classify_cgpa_performance(self, cgpa_value):
-        """
-        Classify CGPA into performance categories
-        
-        Args:
-            cgpa_value (float): Calculated CGPA
-            
-        Returns:
-            str: Performance classification
-        """
         if cgpa_value >= 4.4:
             return "Distinction"
         elif cgpa_value >= 3.5:
@@ -95,12 +74,6 @@ class CGPAStudentSystem:
             return "Fail"
     
     def extract_student_number_values(self):
-        """
-        Extract values from student numbers as specified in requirements
-        
-        Returns:
-            tuple: (extracted_values, total_sum)
-        """
         student_numbers = [216022204, 216002204, 216007570, 216002774]
         total_sum = sum(student_numbers)
         
@@ -116,12 +89,6 @@ class CGPAStudentSystem:
         return [value1, value2, value3, value4], total_sum
     
     def get_course_information_input(self):
-        """
-        Handle input for course data from user
-        
-        Returns:
-            tuple: (courses, grades, credit_units)
-        """
         courses_list = []
         grades_list = []
         credit_units_list = []
@@ -144,16 +111,6 @@ class CGPAStudentSystem:
         return courses_list, grades_list, credit_units_list
     
     def display_cgpa_results(self, courses_list, grades_list, credit_units_list, cgpa_value, performance_classification):
-        """
-        Display calculated results and write to Word document
-        
-        Args:
-            courses_list (list): List of course names
-            grades_list (list): List of grades
-            credit_units_list (list): List of credit units
-            cgpa_value (float): Calculated CGPA
-            performance_classification (str): Performance classification
-        """
         print("\n" + "="*60)
         print("CGPA CALCULATION RESULTS")
         print("="*60)
@@ -212,12 +169,6 @@ class CGPAStudentSystem:
         self.student_records_document.add_paragraph()
     
     def save_student_records_document(self):
-        """
-        Save the Word document with student records
-        
-        Returns:
-            str: Filename of saved document
-        """
         try:
             filename = f"Student_Records_{datetime.now().strftime('%Y%m%d_%H%M%S')}.docx"
             self.student_records_document.save(filename)
@@ -228,9 +179,6 @@ class CGPAStudentSystem:
             return None
 
 def demonstrate_question_one():
-    """
-    Demonstrate Question One functionality - CGPA Calculator and Basic Calculator
-    """
     student_system = CGPAStudentSystem()
     
     print("\n" + "="*70)
@@ -352,9 +300,6 @@ def create_question_two_document():
     return filename
 
 def demonstrate_question_three():
-    """
-    Demonstrate Question Three functionality - Error Handling and OOP Concepts
-    """
     question_three_document = Document()
     question_three_document.add_heading('QUESTION THREE - ERROR HANDLING AND OOP CONCEPTS', 0)
     question_three_document.add_heading('Python Exception Handling and Object-Oriented Programming', 1)
@@ -385,7 +330,6 @@ def demonstrate_question_three():
     question_three_document.add_heading('Part B: Data-logging System File Handling', 2)
     
     def handle_daily_report_file():
-        """Handle daily report file with error handling"""
         try:
             with open("daily_report.txt", "r") as file:
                 content = file.read()
@@ -405,7 +349,7 @@ def demonstrate_question_three():
     # Inheritance Explanation
     question_three_document.add_heading('Inheritance', 4)
     question_three_document.add_paragraph('''
-Inheritance allows a class to inherit attributes and methods from another class, 
+    Inheritance allows a class to inherit attributes and methods from another class, 
 promoting code reusability and establishing hierarchical relationships.
 
 Example:
@@ -422,7 +366,7 @@ class Electronics(Product):
     # Encapsulation Explanation
     question_three_document.add_heading('Encapsulation', 4)
     question_three_document.add_paragraph('''
-Encapsulation restricts direct access to some components and prevents
+    Encapsulation restricts direct access to some components and prevents
 accidental modification of data through access modifiers.
 
 Example:
@@ -441,11 +385,11 @@ Example:
     # Polymorphism Explanation
     question_three_document.add_heading('Polymorphism', 4)
     question_three_document.add_paragraph('''
-Polymorphism allows methods to have different implementations based on
+    Polymorphism allows methods to have different implementations based on
 the object they are acting upon, enabling flexible and extensible code.
 
 Example:
-                                          class Shape:
+class Shape:
     def area(self):
         pass
 

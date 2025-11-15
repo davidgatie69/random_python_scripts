@@ -1,4 +1,11 @@
 """
+MUWANGUZI DAVID JEREMIAH
+KIMULI DAVID 
+NSUBUGA BRIAN
+NASSALI FELISTA SSEGAWA
+STEPHEN CYRUS KALEMA
+
+
 MAKERERE UNIVERSITY - COURSEWORK 2
 Advanced Calculator System with Student Authentication
 Question 4 and 5 Implementation
