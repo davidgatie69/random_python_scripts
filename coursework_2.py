@@ -1,9 +1,14 @@
 """
 MUWANGUZI DAVID JEREMIAH
-KIMULI DAVID 
-NSUBUGA BRIAN
-NASSALI FELISTA SSEGAWA
-STEPHEN CYRUS KALEMA
+=========================================================================================
+NAME                            STUDENT NUMBER                      REGISTRATION NUMBER
+=========================================================================================
+MUWANGUZI DAVID JEREMIAH        2500728758                          25/U/28758/PS
+KIMULI DAVID                    2500703414                          25/U/03414/PSA
+NSUBUGA BRIAN                   2500703546                          25/U/03546/PSA
+NASSALI FELISTA SSEGAWA         2500728768                          25/U/28768/PS
+STEPHEN CYRUS KALEMA            2500703590                          25/U/03590/PS
+
 
 
 MAKERERE UNIVERSITY - COURSEWORK 2
