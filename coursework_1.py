@@ -25,14 +25,12 @@ class CGPAStudentSystem:
         self._setup_document_header()
     
     def _setup_document_header(self):
-        """Setup the Word document with title and headings"""
         self.student_records_document.add_heading('MAKERERE UNIVERSITY - STUDENT RECORDS SYSTEM', 0)
         self.student_records_document.add_heading('CGPA Calculator and Basic Calculator Results', 1)
         self.student_records_document.add_paragraph(f"Generated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         self.student_records_document.add_paragraph()
     
-    def calculate_semester_cgpa(self, grades_list, credit_units_list):
-        
+    def calculate_semester_cgpa(self, grades_list, credit_units_list):       
         total_grade_points = 0
         total_credit_units = 0
         
@@ -46,7 +44,6 @@ class CGPAStudentSystem:
         return total_grade_points / total_credit_units
     
     def perform_arithmetic_operation(self, number1, number2, operation):
-       
         try:
             if operation == '+':
                 return number1 + number2
@@ -149,17 +146,6 @@ class CGPAStudentSystem:
         print("="*60)
     
     def save_student_semester_record(self, student_id, courses_list, grades_list, credit_units_list, cgpa_value, semester):
-        """
-        Save student record to Word document
-        
-        Args:
-            student_id (str): Student identification
-            courses_list (list): List of course names
-            grades_list (list): List of grades
-            credit_units_list (list): List of credit units
-            cgpa_value (float): Calculated CGPA
-            semester (str): Semester information
-        """
         self.student_records_document.add_heading(f'Student Academic Record - {student_id}', 3)
         self.student_records_document.add_paragraph(f"Student ID: {student_id}")
         self.student_records_document.add_paragraph(f"Semester: {semester}")
@@ -211,7 +197,6 @@ def demonstrate_question_one():
     print(f"Student numbers sum: {total_sum}")
     print(f"Extracted values: {extracted_values}")
     
-    # Perform calculations
     val1, val2, val3, val4 = extracted_values
     
     student_system.student_records_document.add_paragraph("Basic Calculator Operations:")

@@ -18,7 +18,6 @@ from docx import Document
 from docx.shared import Inches
 
 class AdvancedCalculator:
-    """Advanced calculator with arithmetic, scientific functions and history tracking"""
     
     def __init__(self):
         self.calculation_history = []
@@ -406,11 +405,11 @@ def demonstrate_student_inheritance():
     student_document.add_paragraph('''
 This demonstration shows Object-Oriented Programming inheritance in action:
 
-• StudentManagementSystem: Base class with common student attributes
-• ComputerScienceStudent: Derived class that inherits from base class
-• Method Overriding: display_student_details() is overridden in derived class
-• super() Usage: Derived class calls base class method using super()
-• Class Attributes: course_program is a class-level attribute shared by all instances
+ StudentManagementSystem: Base class with common student attributes
+ ComputerScienceStudent: Derived class that inherits from base class
+ Method Overriding: display_student_details() is overridden in derived class
+ super() Usage: Derived class calls base class method using super()
+ Class Attributes: course_program is a class-level attribute shared by all instances
 ''')
     
     filename = "Student_Inheritance_Demonstration.docx"
@@ -437,57 +436,57 @@ def generate_comprehensive_output_document():
     # Question One Summary
     comprehensive_document.add_heading('QUESTION ONE: CGPA Calculator and Basic Calculator', 1)
     comprehensive_document.add_paragraph('Implementation Features:')
-    comprehensive_document.add_paragraph('• CGPA calculation using weighted averages', style='List Bullet')
-    comprehensive_document.add_paragraph('• Grade classification system (Distinction, Pass, Fail)', style='List Bullet')
-    comprehensive_document.add_paragraph('• Basic arithmetic operations with error handling', style='List Bullet')
-    comprehensive_document.add_paragraph('• Student number extraction and processing', style='List Bullet')
-    comprehensive_document.add_paragraph('• Word document integration for results storage', style='List Bullet')
-    comprehensive_document.add_paragraph('• Modular code structure with separate functions', style='List Bullet')
+    comprehensive_document.add_paragraph('CGPA calculation using weighted averages', style='List Bullet')
+    comprehensive_document.add_paragraph('Grade classification system (Distinction, Pass, Fail)', style='List Bullet')
+    comprehensive_document.add_paragraph('Basic arithmetic operations with error handling', style='List Bullet')
+    comprehensive_document.add_paragraph('Student number extraction and processing', style='List Bullet')
+    comprehensive_document.add_paragraph('Word document integration for results storage', style='List Bullet')
+    comprehensive_document.add_paragraph('Modular code structure with separate functions', style='List Bullet')
     comprehensive_document.add_paragraph()
     
     # Question Two Summary
     comprehensive_document.add_heading('QUESTION TWO: C Structure Implementation', 1)
     comprehensive_document.add_paragraph('C Programming Concepts Demonstrated:')
-    comprehensive_document.add_paragraph('• Structure declaration and initialization', style='List Bullet')
-    comprehensive_document.add_paragraph('• User input handling for structure members', style='List Bullet')
-    comprehensive_document.add_paragraph('• Pointer operations with structures', style='List Bullet')
-    comprehensive_document.add_paragraph('• Function prototyping and parameter passing', style='List Bullet')
-    comprehensive_document.add_paragraph('• Structure passing by value to functions', style='List Bullet')
+    comprehensive_document.add_paragraph('Structure declaration and initialization', style='List Bullet')
+    comprehensive_document.add_paragraph('User input handling for structure members', style='List Bullet')
+    comprehensive_document.add_paragraph('Pointer operations with structures', style='List Bullet')
+    comprehensive_document.add_paragraph('Function prototyping and parameter passing', style='List Bullet')
+    comprehensive_document.add_paragraph('Structure passing by value to functions', style='List Bullet')
     comprehensive_document.add_paragraph()
     
     # Question Three Summary
     comprehensive_document.add_heading('QUESTION THREE: Error Handling and OOP', 1)
     comprehensive_document.add_paragraph('Key Implementations:')
-    comprehensive_document.add_paragraph('• Division by zero exception handling', style='List Bullet')
-    comprehensive_document.add_paragraph('• File not found error handling', style='List Bullet')
-    comprehensive_document.add_paragraph('• Object-Oriented Programming principles', style='List Bullet')
-    comprehensive_document.add_paragraph('• Inheritance with base and derived classes', style='List Bullet')
-    comprehensive_document.add_paragraph('• Encapsulation with access control', style='List Bullet')
-    comprehensive_document.add_paragraph('• Polymorphism with method overriding', style='List Bullet')
-    comprehensive_document.add_paragraph('• Inventory management system example', style='List Bullet')
+    comprehensive_document.add_paragraph('Division by zero exception handling', style='List Bullet')
+    comprehensive_document.add_paragraph('File not found error handling', style='List Bullet')
+    comprehensive_document.add_paragraph('Object-Oriented Programming principles', style='List Bullet')
+    comprehensive_document.add_paragraph('Inheritance with base and derived classes', style='List Bullet')
+    comprehensive_document.add_paragraph('Encapsulation with access control', style='List Bullet')
+    comprehensive_document.add_paragraph('Polymorphism with method overriding', style='List Bullet')
+    comprehensive_document.add_paragraph('Inventory management system example', style='List Bullet')
     comprehensive_document.add_paragraph()
     
     # Question Four Summary
     comprehensive_document.add_heading('QUESTION FOUR: Advanced Calculator System', 1)
     comprehensive_document.add_paragraph('System Features:')
     comprehensive_document.add_paragraph('• Basic arithmetic operations (+, -, *, /)', style='List Bullet')
-    comprehensive_document.add_paragraph('• Advanced mathematical functions (sqrt, power, trig)', style='List Bullet')
-    comprehensive_document.add_paragraph('• Calculation history tracking and storage', style='List Bullet')
-    comprehensive_document.add_paragraph('• Comprehensive error handling and validation', style='List Bullet')
-    comprehensive_document.add_paragraph('• Object-oriented design with Calculator class', style='List Bullet')
-    comprehensive_document.add_paragraph('• Secure student authentication system', style='List Bullet')
-    comprehensive_document.add_paragraph('• Word document integration for all outputs', style='List Bullet')
+    comprehensive_document.add_paragraph('Advanced mathematical functions (sqrt, power, trig)', style='List Bullet')
+    comprehensive_document.add_paragraph('Calculation history tracking and storage', style='List Bullet')
+    comprehensive_document.add_paragraph('Comprehensive error handling and validation', style='List Bullet')
+    comprehensive_document.add_paragraph('Object-oriented design with Calculator class', style='List Bullet')
+    comprehensive_document.add_paragraph('Secure student authentication system', style='List Bullet')
+    comprehensive_document.add_paragraph('Word document integration for all outputs', style='List Bullet')
     comprehensive_document.add_paragraph()
     
     # Programming Principles
     comprehensive_document.add_heading('Programming Principles Applied', 2)
     comprehensive_document.add_paragraph('The implementation demonstrates these software engineering principles:')
-    comprehensive_document.add_paragraph('• Modular Design: Separate classes for distinct functionalities', style='List Bullet')
-    comprehensive_document.add_paragraph('• Error Handling: Comprehensive try-except blocks', style='List Bullet')
-    comprehensive_document.add_paragraph('• Code Reusability: Modular functions and class methods', style='List Bullet')
-    comprehensive_document.add_paragraph('• Maintainability: Clear naming conventions and documentation', style='List Bullet')
-    comprehensive_document.add_paragraph('• Data Encapsulation: Private methods and proper access control', style='List Bullet')
-    comprehensive_document.add_paragraph('• Inheritance and Polymorphism: OOP principles in practice', style='List Bullet')
+    comprehensive_document.add_paragraph('Modular Design: Separate classes for distinct functionalities', style='List Bullet')
+    comprehensive_document.add_paragraph('Error Handling: Comprehensive try-except blocks', style='List Bullet')
+    comprehensive_document.add_paragraph('Code Reusability: Modular functions and class methods', style='List Bullet')
+    comprehensive_document.add_paragraph('Maintainability: Clear naming conventions and documentation', style='List Bullet')
+    comprehensive_document.add_paragraph('Data Encapsulation: Private methods and proper access control', style='List Bullet')
+    comprehensive_document.add_paragraph('Inheritance and Polymorphism: OOP principles in practice', style='List Bullet')
     
     filename = "Comprehensive_Coursework_Output.docx"
     comprehensive_document.save(filename)
